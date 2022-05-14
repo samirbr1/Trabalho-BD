@@ -113,7 +113,7 @@ CREATE TABLE Funcionario
     Salario DECIMAL(10,2),
     email VARCHAR(50),
     celular VARCHAR(15),
-	PRIMARY KEY(idFuncionario)
+    PRIMARY KEY(idFuncionario)
 );
 
 
