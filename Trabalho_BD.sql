@@ -74,7 +74,7 @@ CREATE TABLE Estudante
     Sexo CHAR,
     email VARCHAR(50),
     celular VARCHAR(15),
-    PRIMARY KEY(idEstudante)
+    PRIMARY KEY(idEstudante, Cpf)
 );
 
 CREATE TABLE Curso
@@ -126,7 +126,7 @@ CREATE TABLE Funcionario
     email VARCHAR(50),
     celular VARCHAR(15),
     endereco VARCHAR(50),
-    PRIMARY KEY(idFuncionario)
+    PRIMARY KEY(idFuncionario, Cpf)
 );
 
 
