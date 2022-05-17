@@ -14,8 +14,8 @@ CREATE TABLE Turma
     idCurso INT,
     idProfessor INT,	
     Descricao VARCHAR(100),
-    data_inicio DATE, 
-    data_termino DATE,
+    dataInicio DATE, 
+    dataTermino DATE,
     idProfessor INT,
     FOREIGN KEY (idProfessor) REFERENCES Professor(idProfessor)
 		ON DELETE CASCADE ON UPDATE CASCADE,
@@ -66,12 +66,12 @@ CREATE TABLE Estudante
 (
     idEstudante INT,
     Cpf CHAR(11),
-    datanasc DATE,
-    Endereco VARCHAR(100),
     Pnome VARCHAR(20),
     Minicial CHAR,
     Unome VARCHAR(20),
+    datanasc DATE,
     Sexo CHAR,
+    Endereco VARCHAR(100),
     email VARCHAR(50),
     celular VARCHAR(15),
     PRIMARY KEY(idEstudante, Cpf)
